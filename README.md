@@ -1,68 +1,62 @@
-accumulator Cookbook
-====================
-TODO: Enter the cookbook description here.
+CloudWeaver
+=============
 
-e.g.
-This cookbook makes your favorite breakfast sandwhich.
+collectors/
+-------------
+### Description
+This directory contains everything about the collectors: 
+* the kernel module, 
+* the collectd plugins, 
+* the python agent, 
+* and the packaging scripts.
 
-Requirements
-------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
+### References
+* [http://wiki.lyatiss.com/mediawiki/index.php/Product#Collectors]
 
-e.g.
-#### packages
-- `toaster` - accumulator needs toaster to brown your bagel.
+communication/
+-------------
+### Description
+This directory contains:
+* the ESB
+* the ESB client libraries
+* the message definitions
+* the service registry
 
-Attributes
-----------
-TODO: List you cookbook attributes here.
+### References
+* [http://wiki.lyatiss.com/mediawiki/index.php/Architecture/P2#ESB.2BServiceRegistry]
 
-e.g.
-#### accumulator::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['accumulator']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+deployment/
+-------------
+### Description
+This directory contains the deployment scripts as well as the Chef cookbooks to deploy CloudWeaver.
 
-Usage
------
-#### accumulator::default
-TODO: Write usage instructions for each cookbook.
+### References
+* [http://wiki.lyatiss.com/mediawiki/index.php/Build_Tools#Deployment_of_a_dev.26test_environnement]
 
-e.g.
-Just include `accumulator` in your node's `run_list`:
+orchestrator/
+-------------
+### Description
+This directory contains:
+* the core
+* the monitoring data processsing system
+* the functional grouping system
+* the social system
 
-```json
-{
-  "name":"my_node",
-  "run_list": [
-    "recipe[accumulator]"
-  ]
-}
-```
+### References
+* [http://wiki.lyatiss.com/Architecture]
+* [http://wiki.lyatiss.com/mediawiki/index.php/Architecture/Review/ReviewMarch2013]
 
-Contributing
-------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
+registration/
+-------------
+### Description
+This directory contains the registration tools.
 
-e.g.
-1. Fork the repository on Github
-2. Create a named feature branch (like `add_component_x`)
-3. Write you change
-4. Write tests for your change (if applicable)
-5. Run the tests, ensuring they all pass
-6. Submit a Pull Request using Github
+### References
+* [http://wiki.lyatiss.com/mediawiki/index.php/Product/Features/Billing_and_Registration]
 
-License and Authors
--------------------
-Authors: TODO: List authors
+qa/
+-------------
+### Description
+This directory contains the QA scripts.
+
+### References
