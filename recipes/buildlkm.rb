@@ -64,9 +64,7 @@ ruby_block "BUILD LKM" do
       system( "mv -f /usr/src/tcp_probe_plus-master /usr/src/tcp_probe_plus-#{version}" )
       system( "dkms add -m tcp_probe_plus -v #{version}" )
       system( "dkms build -m tcp_probe_plus --verbose -v #{version}" )
-      #system( "cp", "/var/lib/dkms/tcp_probe_plus/#{version}/#{kernel}/x86_64/module/tcp_probe_plus.ko", "#{Dir.home}/#{kernel}.ko" )
       system( "mkdir", "-p", "/usr/local/lyatiss/probes/kernel" )
-     # system( "cp", "#{Dir.home}/#{kernel}.ko", "/usr/local/lyatiss/probes/kernel/tcp_probe.ko" )
       system( "cp", "/var/lib/dkms/tcp_probe_plus/#{version}/#{kernel}/x86_64/module/tcp_probe_plus.ko", "/usr/local/lyatiss/probes/kernel/tcp_probe.ko" )
     end
 end
